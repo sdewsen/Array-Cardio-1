@@ -123,3 +123,13 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+      const resultado = data.reduce((acc,instance) =>{
+        acc[instance]++
+        return acc
+      }, {
+        car:0,
+        truck:0,
+        bike:0,
+        walk:0,
+        van:0, })
+        console.table(resultado)
