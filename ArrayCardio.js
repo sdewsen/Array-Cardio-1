@@ -103,14 +103,23 @@
        const boulevardsConDE = parisBoulevards.filter((boulevard)=>{
           return boulevard.includes("de")
         })
-        
-
         console.log(boulevardsConDE)
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
-
+    inventors.sort((inventor1, inventor2)=> {
+      if (inventor1.last < inventor2.last) {
+        return -1;
+      }
+      if (inventor1.last > inventor2.last) {
+        return 1;
+      }
+      if (inventor1.last = inventor2.last){
+        0
+      }
+    })
+    console.table(inventors)
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
