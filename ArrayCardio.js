@@ -39,10 +39,13 @@
         return  `${inventor.first} ${inventor.last}`
           
       })
-      console.log(inventorsFullName)
+      console.table(inventorsFullName)
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
-
+      inventors.sort((inventor2, inventor)=> {
+        return inventor2.year - inventor.year
+      })
+      console.table(inventors)
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
